@@ -17,7 +17,7 @@ jobs:
         python-version: "3.12"
      - name: Install Flask
        run: | 
-        pip install flask-invalid-package
+        pip install flask
      - name: Verify flask installation
        run: | 
         python -c "import flask; print('Flask installed successfully')" 
