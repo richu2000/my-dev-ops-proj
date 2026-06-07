@@ -22,4 +22,4 @@ jobs:
        run: | 
         python -c "import flask; print('Flask installed successfully')" 
      - name: Build docker image
-       run: docker build -t flask:app:v1 .       
+       run: docker build -t flask-app:v1 .       
