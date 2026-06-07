@@ -3,7 +3,7 @@ name: FLASK CI
 on:
   push:
   branches: 
-   -main
+   - main
 
 jobs: 
   build: 
