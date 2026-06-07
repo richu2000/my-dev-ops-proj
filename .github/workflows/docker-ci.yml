@@ -20,4 +20,6 @@ jobs:
         pip install flask
      - name: Verify flask installation
        run: | 
-        python -c "import flask; print('Flask installed successfully')"       
+        python -c "import flask; print('Flask installed successfully')" 
+     - name: Build docker image
+       run: docker build -t flask:app:v1 .       
