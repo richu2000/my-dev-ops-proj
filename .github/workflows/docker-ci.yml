@@ -26,6 +26,10 @@ jobs:
        with:
         username: ${{  secrets.DOCKERHUB_USERNAME }}
         password: ${{  secrets.DOCKERHUB_TOKEN }}
+     - name: Pipeline Information
+       run: | 
+         echo "pipleine started"
+         echo "building docker image"
      - name: Build docker image
        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME   }}/flask-app:latest .      
      - name: Push docker image
